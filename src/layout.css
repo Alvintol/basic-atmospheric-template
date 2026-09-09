@@ -1,0 +1,40 @@
+.site { background-image: radial-gradient(ellipse at 70% 12%, var(--feature), transparent 45%); }
+.site .site-header { border: 1px solid var(--border); border-radius: 4rem; margin-top: 1.5rem; min-height: 5rem; padding: .7rem 1.3rem; background: var(--surface); }
+.site .brand { font-family: var(--font-heading); font-weight: 400; font-size: 1.5rem; }
+.site .brand-mark { background: var(--accent); color: var(--on-accent); border-radius: 50%; }
+.site .retreat-hero { display: grid; grid-template-columns: 1.3fr .7fr; gap: 4rem; align-items: center; padding-block: 2rem; }
+.site .retreat-hero.without-image { grid-template-columns: 1fr; max-width: 52rem; text-align: center; margin-inline: auto; }
+.site .retreat-hero h1 { font-weight: 400; font-size: clamp(3.5rem, 5.8vw, 6rem); line-height: 1.06; }
+.site .retreat-hero h1 > em { display: inline; }
+.site .retreat-hero h1 > span:last-of-type { display: inline; }
+.site .retreat-hero h1 > em::before { content: ' '; }
+.site .retreat-hero .eyebrow { color: var(--accent); }
+.site .retreat-hero .hero-photo { border-radius: 12rem 12rem 1.5rem 1.5rem; border: 1px solid var(--border); }
+.site .retreat-hero .hero-photo img { height: 31rem; }
+.site .retreat-hero figcaption { text-align: center; font-family: var(--font-accent); font-style: italic; padding-block: 1rem; }
+.site .hero-highlights { border: 0; padding-block: 1rem 2rem; gap: .7rem; }
+.site .hero-highlights div { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.15rem; }
+.site .hero-highlights h2 { font-family: var(--font-body); }
+.site .section-intro h2 { font-weight: 400; }
+.site .services { text-align: center; }
+.site .services .section-intro { margin-inline: auto; }
+.site .services .section-description { margin-inline: auto; }
+.site .service-card { text-align: left; }
+.site .service-card h3 { font-weight: 400; }
+.site .item-number { width: 2.5rem; height: 2.5rem; border: 1px solid var(--border); border-radius: 50%; display: grid; place-items: center; }
+.site .showcase-portraits .photo-card { flex-basis: 36%; }
+.site .showcase-portraits .photo-frame { border-radius: 0; }
+.site .showcase-portraits .photo-card h3 { font-family: var(--font-accent); font-weight: 400; font-size: 1.5rem; }
+.site .site-footer { padding-top: 3rem; }
+@media (max-width: 1000px) {
+  .site .retreat-hero { gap: 2rem; }
+  .site .site-header { border-radius: 2rem; }
+}
+@media (max-width: 760px) {
+  .site .retreat-hero { grid-template-columns: 1fr; padding-top: 1rem; }
+  .site .retreat-hero h1 { font-size: clamp(3rem, 11vw, 4.5rem); }
+  .site .retreat-hero .hero-photo { max-width: 27rem; width: 100%; margin-inline: auto; }
+  .site .retreat-hero .hero-photo img { height: 27rem; }
+  .site .showcase-portraits .photo-card { flex-basis: 78%; }
+  .site .site-header { padding-inline: 1rem; }
+}
