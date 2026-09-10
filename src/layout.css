@@ -21,7 +21,6 @@
 .site .services .section-description { margin-inline: auto; }
 .site .service-card { text-align: left; }
 .site .service-card h3 { font-weight: 400; }
-.site .item-number { width: 2.5rem; height: 2.5rem; border: 1px solid var(--border); border-radius: 50%; display: grid; place-items: center; }
 .site .showcase-portraits .photo-card { flex-basis: 36%; }
 .site .showcase-portraits .photo-frame { border-radius: 0; }
 .site .showcase-portraits .photo-card h3 { font-family: var(--font-accent); font-weight: 400; font-size: 1.5rem; }
